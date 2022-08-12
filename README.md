@@ -2,6 +2,8 @@
 
 ## Building and Running
 
+![option3](./screenshot.png)
+
 ### Option 1: Quick & Dirty
 
 Runing the tests:
@@ -39,6 +41,3 @@ docker build -t genesysvm .
 docker run -it genesysvm # Running the tests
 cat samples.txt | docker run -i genesysvm ./build/gvm # Running the code with custom input
 ```
-
-Here's an example of Option 3 run:
-![option3](./screenshot.png)
