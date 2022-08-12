@@ -41,3 +41,17 @@ docker build -t genesysvm .
 docker run -it genesysvm # Running the tests
 cat samples.txt | docker run -i genesysvm ./build/gvm # Running the code with custom input
 ```
+
+### Option 4: Docker + Dockerhub
+
+Running without building:
+```sh
+docker run -it dciobanu/samples:gvm # Running the tests
+cat samples.txt | docker run -i dciobanu/samples:gvm ./build/gvm # Running the VM with custom input
+```
+
+Updating the image:
+```sh 
+docker build -t dciobanu/samples:gvm .
+docker push dciobanu/samples:gvm
+```
