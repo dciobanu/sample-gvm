@@ -30,11 +30,12 @@ GenesysVM::GenesysVM(uint16_t code[], uint16_t len, uint64_t limit)
     for (; i<1000; i++) {
         memory[i] = 0;
     }
+
+    running = true;
 }
 
 void GenesysVM::Step()
 {
-    // std::cout << "Step()" << std::endl;
     uint16_t instruction, d1, d2, d3, addr;
 
     if (ic > ilimit)
@@ -154,7 +155,7 @@ void GenesysVM::Step()
 
 void GenesysVM::Execute()
 {
-    // std::cout << "Execute()" << std::endl;
+    // std::cout << "Execute()" << std::endl;    
 
     while (running) {
         Step();

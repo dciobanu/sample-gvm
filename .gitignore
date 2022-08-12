@@ -1,2 +1,6 @@
 .vscode
 build
+buildwindows
+buildubuntu
+test_run
+gvm_run
