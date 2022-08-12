@@ -78,42 +78,41 @@ void GenesysVMTest::test_SetR() {
 }
 
 void GenesysVMTest::test_AddNtoR() {
-    cout << "TODO: implement" << endl;
+    cout << "TODO: implement (port test-cases from: https://github.com/dciobanu/sample-gvm-go/blob/main/vm_test.go)" << endl;
 }
 
 void GenesysVMTest::test_MulRbyN() {
-    cout << "TODO: implement" << endl;
+    cout << "TODO: implement (port test-cases from: https://github.com/dciobanu/sample-gvm-go/blob/main/vm_test.go)" << endl;
 }
 
 void GenesysVMTest::test_MovRtoR() {
-    cout << "TODO: implement" << endl;
+    cout << "TODO: implement (port test-cases from: https://github.com/dciobanu/sample-gvm-go/blob/main/vm_test.go)" << endl;
 }
 
 void GenesysVMTest::test_AddRtoR() {
-    cout << "TODO: implement" << endl;
+    cout << "TODO: implement (port test-cases from: https://github.com/dciobanu/sample-gvm-go/blob/main/vm_test.go)" << endl;
 }
 
 void GenesysVMTest::test_MulRtoR() {
-    cout << "TODO: implement" << endl;
+    cout << "TODO: implement (port test-cases from: https://github.com/dciobanu/sample-gvm-go/blob/main/vm_test.go)" << endl;
 }
 
 void GenesysVMTest::test_MoveMemToR() {
-    cout << "TODO: implement" << endl;
+    cout << "TODO: implement (port test-cases from: https://github.com/dciobanu/sample-gvm-go/blob/main/vm_test.go)" << endl;
 }
 
 void GenesysVMTest::test_MoveRToMem() {
-    cout << "TODO: implement" << endl;
+    cout << "TODO: implement (port test-cases from: https://github.com/dciobanu/sample-gvm-go/blob/main/vm_test.go)" << endl;
 }
 
 void GenesysVMTest::test_Jmp() {
-    cout << "TODO: implement" << endl;
+    cout << "TODO: implement (port test-cases from: https://github.com/dciobanu/sample-gvm-go/blob/main/vm_test.go)" << endl;
 }
 
 void GenesysVMTest::test_sample1() {
     uint16_t sample1[] = {299, 492, 495, 399, 492, 495, 399, 283, 279, 689, 78, 100, 0, 0, 0};
     unique_ptr<GenesysVM> vm(new GenesysVM(sample1, sizeof(sample1)/sizeof(uint16_t), 10000));
     vm->Execute();
-    cout<<(vm->ic)<<endl;
     assert((vm->ic) == 16);
 };
 
